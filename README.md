@@ -12,7 +12,7 @@
    ```
 4. Для инициализации нового проекта выполните в командной строке:
    ```bash
-   cookiecutter https://github.com/gf2crypto/cookiecutter-msu-paperwork.git
+   cookiecutter https://github.com/ne4ehbk0/cookiecutter-msu-paperwork.git
    ```
 5. Параметры:
      - **project_name**, имя проекта (поддерживается только латиница);
@@ -23,10 +23,6 @@
 
 __ВНИМАНИЕ! `make`-файлы используют `latexmk` для компиляции документа! Рекомендуется устанавливать полную версию `LaTeX`, чтобы сэкономить время на отладке и доустановке пакетов!__
 
-## Установка вручную
-В ветке `example` содержится интерполированная версия шаблона. Поэтому, если возникли сложности с установкой `python` или `cookiecutter`, то можно скачать файлы из этой ветки и дальше адаптировать их вручную под конкретный проект.
-
-Скачать ветку можно по ссылке: [zip](https://github.com/gf2crypto/cookiecutter-msu-paperwork/archive/example.zip) или сначала клонировать репозиторий с помощью команды `git clone https://github.com/gf2crypto/cookiecutter-msu-paperwork.git`, а потом перейти на ветку `example`, выполнив в папке клонированного репозитория команду `git checkout example`.
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
