@@ -1,4 +1,5 @@
 %!TEX root = ../{{cookiecutter.project_name}}.tex
+
 {% raw %}
 % -----------------------Title Header-------------------------------------
 \makepagestyle{titlepagestyle}
@@ -13,17 +14,23 @@
 % \definecolor{krypto_red}{RGB}{135, 43, 59}
 \begin{SingleSpace}
 \begin{center}
-\includegraphics{logo}\\
+%\includegraphics[scale=0.1]{logo}\\
 {\small
+\MakeUppercase{\Ministry}\\
 \MakeUppercase{\Univer}\\
 \MakeUppercase{\Faculty}\\
-\MakeUppercase{\Department}\\[4\baselineskip]
+\MakeUppercase{\Department}\\[8\baselineskip]
 }
-\Author\\
+%\Author\\
 \textbf{
-  \Title\\[2\baselineskip]
+%  \Title\\[2\baselineskip]
 }
-\MakeUppercase{\WorkType}\\[3\baselineskip]
+\MakeUppercase{\WorkType}\\[1\baselineskip]
+\ReportNum\\[3\baselineskip]
+%\MakeUppercase{\WorkType}\\[3\baselineskip]
+\textbf{
+  \Title\\[3\baselineskip]
+}
 \end{center}
 
 \vspace*{2\baselineskip}
@@ -33,16 +40,19 @@
 %
 \else
     \raggedleft
-    \begin{minipage}{0.58\textwidth}
+    \begin{minipage}{0.38\textwidth}
             \SingleSpacing
-            \textbf{Научный руководитель:}\\
+            \textbf{Работу выполнил:}\\
+            \StudentGroupNumber\\
+            \AuthorShort\\
+            \textbf{Проверил:}\\
             \Position
             \ifx\AcademicDegree\empty
                 \\%
             \else
                 , \AcademicDegree\\%
             \fi
-            \SciAdvisor
+            \SciAdvisorShort
     \end{minipage}
 
     \def\True{true}

@@ -1,6 +1,7 @@
 %!TEX root = ../{{cookiecutter.project_name}}.tex
 
 {% raw %}
+
 %Включение в документ листингов
 \usepackage{listings}
 
@@ -20,7 +21,7 @@
 % Подстветка синтаксиса
 % ВНИМАНИЕ! Требует установки python и пакета pygmentize
 % Поэтому по умолчанию пакет закомментирован, чтобы не возникало ошибок компиляции
-% \usepackage{minted}
+\usepackage{minted}
 
 %решаем проблему с кириллицей в комментариях (в pdflatex) https://tex.stackexchange.com/a/103712
 \lstset{extendedchars=true,keepspaces=true,literate={Ö}{{\"O}}1
