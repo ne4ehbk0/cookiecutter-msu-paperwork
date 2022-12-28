@@ -14,6 +14,9 @@
    ```bash
    cookiecutter https://github.com/ne4ehbk0/cookiecutter-msu-paperwork.git
    ```
+   ```bash
+   -m cookiecutter https://github.com/ne4ehbk0/cookiecutter-msu-paperwork.git
+   ```
 5. Параметры:
      - **project_name**, имя проекта (поддерживается только латиница);
      - **create_gitignore**, требуется ли создать `.gitignore` файл для использования системы контроля версий `git`: 'yes' или 'no'.
